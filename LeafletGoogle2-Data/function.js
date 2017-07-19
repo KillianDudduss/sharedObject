@@ -1241,7 +1241,7 @@ methods.addTiles = function (urlTemplate, layerId, group, options) {
 };
 
 methods.addGoogleTiles = function( layerId, group, options) {
-  this.layerManager.addLayer(L.gridLayer.googleMutant({type : "satellite"}), "tile", layerId, group);
+  this.layerManager.addLayer(L.gridLayer.googleMutant({type : type}), "tile", layerId, group);
 };
 
 methods.removeTiles = function (layerId) {
